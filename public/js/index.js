@@ -91,7 +91,7 @@ class School {
 
 const city_select = document.querySelector('#city-select');
 const zipcode_select = document.querySelector('#zipcode-select');
-const BACKEND_URL = "https://citidex.herokuapp.com"
+const BACKEND_URL = "https://citidex-backend.herokuapp.com"
 
 document.addEventListener('DOMContentLoaded', function(){
     fetch(`${BACKEND_URL}/cities`)
