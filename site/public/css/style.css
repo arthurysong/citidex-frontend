@@ -1,0 +1,41 @@
+.hidden {
+    display: none;
+}
+
+body {
+    height: 500px;
+    background-image: url('../images/background2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #26301d;
+
+
+    color: white;
+    font-family: arial, sans-serif;
+    text-shadow: 2px 2px 4px black;
+
+   }
+
+a {
+    color: #ffcccc;
+}
+
+#tanker {
+    width: 600px;
+
+    margin: 100px auto;
+}
+
+#container1{
+    float: left;
+    width: 50%;
+}
+
+#container2{
+    float: left;
+    width: 50%;
+}
+
+ul {
+    list-style-type: none;
+}

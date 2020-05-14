@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Citidex</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div id="tanker">
+            <div id="container1">
+                <div id="city">
+                    <!-- <button id="sort-cities">Sort</button> -->
+                    <ul id="ordered-cities"></ul>
+                    <h4 id="pick-a-city">Choose a City <a id="add-city" href=''>Add City</a></h4>
+                    <div id="new-city-div" class="hidden">
+                        <h6>Add new city <a href='' id="hide-new-city-form">hide</a></h6>
+                        <form>
+                            <label for="name">Name:</label><br>
+                            <input type="text" id="name" name="name"><br>
+                            
+                            <label for="median-homeprice">Median Property Value:</label><br>
+                            <input type="text" id="median-homeprice" name="median-homeprice"><br>
+                            
+                            <label for="home-value-growth">Property Growth Percentage:</label><br>
+                            <input type="text" id="home-value-growth" name="home-value-growth"><br>
+                            
+                            <label for="population">Population:</label><br>
+                            <input type="text" id="population" name="population"><br>    
+                            
+                            <label for="median-age">Median Age:</label><br>
+                            <input type="text" id="median-age" name="median-age"><br>
+
+                            <label for="median-household-income">Median Household Income:</label><br>
+                            <input type="text" id="median-household-income" name="median-household-income"><br>
+                            
+                            <label for="income-growth">Income Growth Percentage:</label><br>
+                            <input type="text" id="income-growth" name="income-growth"><br>
+                            
+                            <label for="job-growth-percentage">Job Growth Percentage:</label><br>
+                            <input type="text" id="job-growth-percentage" name="job-growth-percentage"><br>
+                            <input type="submit" id="new-city-submit">
+                            <br><br>
+                        </form>
+                    </div>
+                    <select id="city-select">
+                        <option val='-'>-</option>
+                    </select>
+                    <a href="" id="compare-link">Compare</a>
+                    <div id="city-info">
+                        <h1></h1>
+                        <p></p>
+                    </div>
+                </div>
+                
+                <div id="zipcode" class="hidden">
+                    <select id="zipcode-select">
+                        <option val="-">-</option>
+                    </select>
+                    <a id="add-zipcode" href=''>Add Zipcode</a>
+                    <div id="new-zipcode-div" class="hidden">
+                        <h6>Add new home <a href='' id="hide-new-zipcode-form">hide</a></h6>
+                        <form>
+                            <label for="digits">Zipcode:</label><br>
+                            <input type="text" id="digits" name="digits"><br>
+                            <input type="submit" id="new-zipcode-submit">
+                        </form>
+                    </div>
+                    <h3 id="zipcode-header"></h3>
+                    <p id="zipcode-info"></p>
+
+                    <div id="zipcode-info-buttons" class="hidden">
+                        <button id="see-homes">Homes</button>
+                        <button id="see-schools">Schools</button>
+                    </div>
+
+                    <div id="possible-lists">
+                        <div id="homes" class="hidden">
+                            <div id="new-home-div" class="hidden">
+                                <h6>Add new home <a href='' id="hide-new-home-form">hide</a></h6>
+                                <form>
+                                    <label for="address">Address:</label><br>
+                                    <input type="text" id="address" name="address"><br>
+                                    <label for="date-sold">Date Sold: (mm/dd/yyyy) </label><br>
+                                    <input type="text" id="date-sold" name="date-sold"><br>
+                                    <label for="price">Price:</label><br>
+                                    <input type="text" id="price" name="price"><br>
+                                    <label for="bedrooms">No. of Bedrooms:</label><br>
+                                    <input type="text" id="bedrooms" name="bedrooms"><br>
+                                    <label for="bathrooms">No. of Bathrooms:</label><br>
+                                    <input type="text" id="bathrooms" name="bathrooms"><br>
+                                    <label for="sqft">Sq ft:</label><br>
+                                    <input type="text" id="sqft" name="sqft"><br>
+                                    <label for="year-built">Year Built:</label><br>
+                                    <input type="text" id="year-built" name="year-built"><br>
+                                    <input type="submit" id="new-home-submit">
+                                </form>
+                            </div>
+                            <h6 id="homes-sold">Homes Sold <a id="add-home" href=''>Add Home</a></h6>
+                            <ul></ul>
+                        </div>
+
+                        <div id="schools" class="hidden">
+                            <h6 id="schools-header">Schools</h6>
+                            <ul></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="container2" class="hidden">
+                <h4 id="pick-a-city2">Choose a City</h4>
+                <select id="city-select2">
+                    <option val='-'>-</option>
+                </select>
+                <div id="city-info2">
+                    <h1></h1>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <script src="/js/index.js"></script>
+    </body>
+</html>
