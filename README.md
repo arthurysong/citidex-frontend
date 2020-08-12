@@ -6,7 +6,7 @@ After watching a bunch of Graham Stephen videos, I was looking into homes and lo
 
 ## Screenshot
 
-![screenshot][citidex.jpg]
+![screenshot](citidex.jpg)
 
 ## Usage 
 
